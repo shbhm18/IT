@@ -1,0 +1,83 @@
+<html>
+
+<head>
+
+<title>Bubble sort</title>
+
+<script type="text/javascript">
+
+function bubble_sort()
+
+{
+ 
+ var i,j,el;
+
+ var tmp;
+
+ var size=parseInt(prompt("Enter the size of array:"," "));
+ 
+ var arr=new Array();
+ 
+ for(i=0;i<size;i++)
+ 
+  {
+ 	
+   el=parseInt(prompt("Enter the element of array:"," "));
+ 	
+   arr[i]=el;
+ 
+  } 
+ 
+ for(i=0;i<size-1;i++)
+
+  {	
+    for(j=0;j<size-i-1;j++)
+ 	
+       {
+ 		
+         if(arr[j]>arr[j+1])
+ 		
+           {
+ 			
+             tmp=arr[j];
+ 			
+             arr[j]=arr[j+1];
+ 			
+             arr[j+1]=tmp;
+ 		
+            } 
+ 	
+        }
+
+  }
+
+ var res="";
+
+ for(i=0;i<size;i++)
+
+    {
+ 	
+      res=res+arr[i]+" ";
+ 
+    }
+
+ alert("Sorted array is "+res);
+}
+
+</script>
+
+</head>
+
+<body bgcolor="pink" text="black">
+
+<form name="form1">
+To perform bubble sort click the button
+<br />
+
+<input type="button" name="button" value="Bubble_sort" onClick="bubble_sort();">
+
+</form>
+
+</body>
+
+</html>

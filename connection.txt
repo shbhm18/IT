@@ -1,0 +1,74 @@
+
+Conversation opened. 1 unread message.
+
+Skip to content
+Using Gmail with screen readers
+Search
+
+
+
+Gmail
+COMPOSE
+Labels
+Inbox (17)
+Starred
+Sent Mail
+Drafts
+Notes
+More 
+Hangouts
+
+ 
+ 
+  More 
+1 of 296  
+ 
+Print all In new window
+(no subject) 
+Inbox
+x 
+
+Hardik Jain
+Attachments12:28 PM (5 hours ago)
+
+to me 
+Attachments area
+	
+Click here to Reply or Forward
+1.35 GB (9%) of 15 GB used
+Manage
+Terms - Privacy
+Last account activity: 10 hours ago
+Details
+
+
+package demojdbc;
+import java.sql.*;
+public class JavaApplication3
+{
+   public static void main(String args[])
+   {
+       try{
+           String Query ="Select * from student where rollnumber = 2";
+       Class.forName("com.mysql.jdbc.Driver");
+       Connection con=DriverManager.getConnection("jdbc:mysql://localhost/demo","root","0");
+       Statement st=con.createStatement();
+       
+      
+       ResultSet rs=st.executeQuery(Query);
+       rs.next();
+       String sname=rs.getString(2);
+       
+       
+       
+           System.out.println(sname);
+       
+       con.close();
+       }
+       catch(Exception e)
+       {  
+       }
+   }
+}
+aa.txt
+Displaying aa.txt.
